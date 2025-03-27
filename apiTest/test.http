@@ -17,3 +17,20 @@ Content-Type: application/json
   "publisher": "O'Reilly Media",
   "type": "Programming"
 }
+
+###
+
+DELETE localhost:8080/books/delete/3
+
+###
+
+PUT localhost:8080/books/update/2
+Content-Type: application/json
+
+{
+  "isbn": "978-1-491-91465-6",
+  "title": "Effective Java",
+  "author": "Joshua Bloch",
+  "publisher": "Addison-Wesley",
+  "type": "Programming"
+}

@@ -30,5 +30,15 @@ public class JpaBookService implements BookService {
     public void add(Book book) {
         bookRepository.save(book);
     }
+
+    @Override
+    public void delete(Long id) {
+        bookRepository.deleteById(id);
+    }
+
+    @Override
+    public void update(Book book) {
+        bookRepository.save(book);
+    }
 }
 
